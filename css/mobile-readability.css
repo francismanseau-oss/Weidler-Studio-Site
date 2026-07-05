@@ -1,0 +1,76 @@
+/* ── Lisibilité mobile (pages principales, ≤768px) ──
+   Chargé en dernier sur Accueil, Services, Projets, Soumission, À propos, Contact.
+   !important : battre les font-size clamp() des autres feuilles (home.css, site.css, Projets inline). */
+
+@media (max-width: 768px) {
+    body {
+        --mobile-text-size: 1.25rem;
+        --mobile-text-leading: 1.72;
+        font-size: var(--mobile-text-size);
+        line-height: var(--mobile-text-leading);
+    }
+
+    /* Corps de texte — !important bat .page-home .home-card p et autres clamp() */
+    body main p,
+    body main li,
+    body main label,
+    body main figcaption,
+    body main blockquote,
+    body main dd,
+    body main dt,
+    body main .lead,
+    body main .discussion-subtitle,
+    body main .note-muted,
+    body main .submission-field-error,
+    body main .submission-required-notice,
+    body main .char-counter,
+    body main .submission-consent span,
+    body main .about-quote,
+    body main .feature-card p,
+    body main .comment-card p,
+    body main .teaser-box p,
+    body main .submission-panel p,
+    body main .form-group label,
+    body main .submission-panel label,
+    body main .studio-cta .lead,
+    body main .page-hero .lead,
+    body main .page-intro .lead,
+    body main .about-block p,
+    body main .about-block .lead,
+    body main .about-story p,
+    body main .about-list li,
+    body main .submission-list li,
+    body main .about-principles li,
+    body main .home-lead,
+    body main .home-subtitle,
+    body main .home-card p,
+    body main .home-project-card p,
+    body main .home-process-item p,
+    body main .home-approach-quote p,
+    body main .home-approach-list li,
+    body main .home-contact-lead,
+    body main .home-section-link,
+    body main .home-footer-tagline,
+    body main .haven-subtitle,
+    body main .haven-summary-box .lead,
+    body main .pi-report-intro,
+    body main.page-projects p,
+    body main.page-projects .lead,
+    body main.page-projects .discussion-subtitle,
+    body main.page-projects li,
+    body main.page-projects .pi-workflow-step p,
+    body main.page-projects figcaption,
+    .site-footer,
+    .site-footer p,
+    .site-footer-copy {
+        font-size: var(--mobile-text-size) !important;
+        line-height: var(--mobile-text-leading) !important;
+    }
+
+    /* Menus déroulants natifs — taille inchangée (exception demandée) */
+    body main select,
+    body main select option {
+        font-size: 0.875rem !important;
+        line-height: 1.35 !important;
+    }
+}
