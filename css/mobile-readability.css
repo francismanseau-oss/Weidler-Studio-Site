@@ -1,16 +1,15 @@
 /* ── Lisibilité mobile (pages principales, ≤768px) ──
-   Chargé en dernier sur Accueil, Services, Projets, Soumission, À propos, Contact.
-   !important : battre les font-size clamp() des autres feuilles (home.css, site.css, Projets inline). */
+   Chargé en dernier. !important + px explicites pour battre tous les clamp().
+   Select / option exclus (14px). */
 
 @media (max-width: 768px) {
     body {
-        --mobile-text-size: 1.25rem;
+        --mobile-text-size: 20px;
         --mobile-text-leading: 1.72;
         font-size: var(--mobile-text-size);
         line-height: var(--mobile-text-leading);
     }
 
-    /* Corps de texte — !important bat .page-home .home-card p et autres clamp() */
     body main p,
     body main li,
     body main label,
@@ -60,6 +59,7 @@
     body main.page-projects li,
     body main.page-projects .pi-workflow-step p,
     body main.page-projects figcaption,
+    #submissionStepRates p,
     .site-footer,
     .site-footer p,
     .site-footer-copy {
@@ -67,10 +67,42 @@
         line-height: var(--mobile-text-leading) !important;
     }
 
-    /* Menus déroulants natifs — taille inchangée (exception demandée) */
     body main select,
     body main select option {
-        font-size: 0.875rem !important;
+        font-size: 14px !important;
         line-height: 1.35 !important;
+    }
+}
+
+/* Soumission — Retour / Continuer (flex, sans :has(), compatible Android) */
+@media (max-width: 640px) {
+    .page-soumission .submission-actions {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .page-soumission .submission-actions .btn-primary,
+    .page-soumission .submission-actions .btn-outline {
+        flex: 1 1 0 !important;
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        min-height: 48px !important;
+        height: 48px !important;
+        padding: 0 10px !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
+        box-sizing: border-box !important;
+    }
+
+    .page-soumission .submission-actions > .btn-primary:only-child {
+        flex: 1 1 100% !important;
+        width: 100% !important;
     }
 }
