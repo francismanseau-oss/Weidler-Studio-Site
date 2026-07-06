@@ -89,6 +89,11 @@
         line-height: 1.25 !important;
     }
 
+    body[data-nav-active="services"] .feature-card p {
+        font-size: 19px !important;
+        line-height: var(--mobile-text-leading) !important;
+    }
+
     .page-soumission select,
     .page-soumission select option {
         font-size: 13px !important;
