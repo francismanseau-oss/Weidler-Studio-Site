@@ -1,4 +1,5 @@
 function initSubmissionForm() {
+    // deploy-bust-20260711a
     const consentCheckbox = document.getElementById("submissionConsent");
     const startButton = document.getElementById("submissionStartBtn");
 
