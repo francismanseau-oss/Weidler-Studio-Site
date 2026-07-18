@@ -11,13 +11,15 @@
     <script src="../js/theme.js"></script>
     <link rel="stylesheet" href="../css/site.css?v=8">
     <link rel="stylesheet" href="../css/themes.css?v=8">
-    <link rel="stylesheet" href="../css/layout.css?v=8">
-    <link rel="stylesheet" href="../css/interactive.css?v=8">
-    <link rel="stylesheet" href="../css/about.css?v=8">
+    <link rel="stylesheet" href="../css/layout.css?v=14">
+    <link rel="stylesheet" href="../css/interactive.css?v=11">
+    <link rel="stylesheet" href="../css/about.css?v=10">
     <link rel="stylesheet" href="../css/mobile-readability.css?v=8">
+    <link rel="preload" as="image" href="../assets/about/about-portrait.png">
 </head>
-<body class="page-about" data-nav-root="../" data-nav-active="about">
+<body class="page-about" data-nav-root="../" data-nav-active="about" data-preload-images="../assets/about/about-portrait.png">
     <script src="../js/site-bg.js"></script>
+    <script src="../js/preload-images.js"></script>
 
     <header class="site-header">
         <div class="header-top">
@@ -34,13 +36,12 @@
                 <span class="nav-sep" aria-hidden="true">|</span>
                 <a href="../projects/index.html"><span class="nav-link-text" data-translate>Projets</span></a>
                 <span class="nav-sep" aria-hidden="true">|</span>
-                <a href="../soumission/index.html"><span class="nav-link-text" data-translate>Soumission</span></a>
-                <span class="nav-sep" aria-hidden="true">|</span>
+                <!-- TEMP: Soumission masquée — lien menu retiré -->
                 <a href="../about/index.html"><span class="nav-link-text" data-translate>À propos</span></a>
                 <span class="nav-sep" aria-hidden="true">|</span>
                 <a href="../contact/index.html"><span class="nav-link-text" data-translate>Contact</span></a>
             </nav>
-            <script src="../js/site-nav.js?v=3"></script>
+            <script src="../js/site-nav.js?v=4"></script>
             <span class="lang-status" id="langStatus" data-translate>Traduction…</span>
             <nav class="lang-switcher" id="langFlags" aria-label="Choisir la langue">
                 <button type="button" class="lang-btn" data-lang="en">EN</button>
@@ -76,7 +77,8 @@
                             class="about-portrait__photo"
                             width="196"
                             height="196"
-                            loading="lazy"
+                            loading="eager"
+                            fetchpriority="high"
                             decoding="async"
                         >
                     </div>
@@ -117,7 +119,7 @@
 
     <footer class="site-footer" data-translate>&copy; 2026 Weidler Studio. Tous droits réservés.</footer>
     <script src="../js/nav.js"></script>
-    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/mobile-nav.js?v=15"></script>
     <script src="../js/portrait-lock.js"></script>
     <script src="../js/back-to-top.js"></script>
     <script src="../js/i18n.js"></script>

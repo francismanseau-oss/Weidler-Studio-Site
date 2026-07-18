@@ -1,4 +1,7 @@
 (function () {
+    // TEMP 2026-07-18: masquer Soumission du swipe mobile (même drapeau que site-nav.js).
+    var HIDE_SUBMISSION_NAV = true;
+
     var SWIPE_PAGES = [
         { id: "home", path: "index.html" },
         { id: "services", path: "services/index.html" },
@@ -6,7 +9,9 @@
         { id: "submission", path: "soumission/index.html" },
         { id: "about", path: "about/index.html" },
         { id: "contact", path: "contact/index.html" }
-    ];
+    ].filter(function (page) {
+        return !(HIDE_SUBMISSION_NAV && page.id === "submission");
+    });
 
     var PAGE_LABELS = {
         home: "Accueil",
@@ -129,33 +134,28 @@
         var enabled = isSwipeEnabled();
         prev.hidden = !enabled || index <= 0;
         next.hidden = !enabled || index >= SWIPE_PAGES.length - 1;
+        syncHintGeometry();
     }
 
-    function playHintIntro() {
-        if (!isMobile() || !isSwipeEnabled()) return;
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
+    function syncHintGeometry() {
         var hints = document.getElementById("mobileSwipeHints");
-        if (!hints || hints.hidden) return;
+        if (!hints || hints.hidden || !isMobile()) return;
+
+        var vv = window.visualViewport;
+        var centerY = vv
+            ? vv.offsetTop + vv.height / 2
+            : window.innerHeight / 2;
 
         hints.querySelectorAll(".mobile-swipe-hint").forEach(function (btn) {
-            if (btn.hidden) return;
-
-            btn.classList.remove("is-intro");
-            void btn.offsetWidth;
-            btn.classList.add("is-intro");
-
-            btn.addEventListener("animationend", function onEnd(event) {
-                if (event.animationName !== "mobile-swipe-hint-intro") return;
-                btn.classList.remove("is-intro");
-                btn.removeEventListener("animationend", onEnd);
-            });
+            btn.style.top = centerY + "px";
+            btn.style.transform = "translate3d(0, -50%, 0)";
         });
     }
 
     function refreshUi() {
         updateProgress();
         updateHints();
+        syncHintGeometry();
     }
 
     function mountUi() {
@@ -202,9 +202,6 @@
 
         uiMounted = true;
         refreshUi();
-        requestAnimationFrame(function () {
-            requestAnimationFrame(playHintIntro);
-        });
     }
 
     function onTouchStart(event) {
@@ -285,14 +282,14 @@
     document.addEventListener("touchcancel", resetTracking, { passive: true });
 
     window.addEventListener("resize", refreshUi, { passive: true });
-    window.addEventListener("pageshow", function (event) {
+    window.addEventListener("pageshow", function () {
         refreshUi();
-        if (event.persisted) {
-            requestAnimationFrame(function () {
-                requestAnimationFrame(playHintIntro);
-            });
-        }
     });
+
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener("resize", syncHintGeometry, { passive: true });
+        window.visualViewport.addEventListener("scroll", syncHintGeometry, { passive: true });
+    }
 
     if (typeof MutationObserver !== "undefined") {
         var bodyObserver = new MutationObserver(function () {
