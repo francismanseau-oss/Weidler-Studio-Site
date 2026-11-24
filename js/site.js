@@ -61,6 +61,12 @@
       body.innerHTML = section.body;
       details.appendChild(summary);
       details.appendChild(body);
+      details.addEventListener("toggle", () => {
+        if (!details.open) return;
+        host.querySelectorAll("details.acc-item").forEach((other) => {
+          if (other !== details) other.open = false;
+        });
+      });
       host.appendChild(details);
     });
   }
