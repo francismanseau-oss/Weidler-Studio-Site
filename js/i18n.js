@@ -296,6 +296,9 @@
   STRINGS.pt = Object.assign({}, STRINGS.en, {
     navHome: "Início",
     navContact: "Contacto",
+    footer:
+      "<p>© Weidler Studio 2026</p>" +
+      '<p>Webmestre <a href="https://artisanfm.ca" target="_blank" rel="noopener">Artisan FM</a></p>',
     homeTitle: "As nossas aplicações",
     homeLead: "Um jogo de cribbage, uma ferramenta para adaptar o telemóvel ao teu dia, e outras ideias a caminho.",
     discover: "Descobrir",
@@ -306,7 +309,46 @@
     galleryTitle: "Galeria",
     featuresTitle: "Funcionalidades e opções",
     privacyTitle: "Política de privacidade",
+    hkFeat1: "<strong>Personalização</strong> — Versos das cartas, tabuleiros e opções de contagem.",
+    hkFeat2: "<strong>Pontuação clara</strong> — Pontos sob as cartas, com marcadores quando uma carta conta várias vezes.",
+    hkFeat3: "<strong>Progresso</strong> — Estatísticas, histórico, medalhas e troféus.",
     hkFeat4: "<strong>Suporte integrado com assistência por IA</strong> — Reporte um bug, sugira uma melhoria ou faça uma pergunta. É necessária ligação à Internet para enviar a mensagem.",
+    hkFeat5: "<strong>Offline</strong> — Jogue o núcleo do jogo sem Internet.",
+    hkFeat6: "<strong>Multilingue</strong> — Interface em seis idiomas: inglês, francês, português, espanhol, chinês e japonês.",
+    hkHowTitle: "Como jogar",
+    hkHowBody:
+      "<p>O objetivo é obter o máximo de pontos em <strong>3 rounds</strong>.</p>" +
+      "<h3>Como funciona um round</h3>" +
+      "<p>Cada round usa <strong>21 cartas</strong>: 20 para construir as mãos e a 21.ª como <strong>carta de corte</strong>.</p>" +
+      "<p>Você cria:</p>" +
+      "<ul><li><strong>4 mãos abertas</strong></li><li><strong>1 cribble</strong> (mão fechada)</li></ul>" +
+      "<p>As cartas <strong>5, 10, 15 e 20</strong> vão sempre para o cribble. Depois coloque as restantes para formar as melhores combinações. Quando as 20 cartas estão colocadas, o corte é revelado e começa a contagem.</p>" +
+      "<h3>Fim de partida</h3>" +
+      "<p>No modo solo, o objetivo é atingir <strong>121 pontos</strong> em 3 rounds. Contra um adversário, vence o melhor total; em caso de empate, é empate.</p>" +
+      "<p><strong>Dica:</strong> construa várias combinações com as mesmas cartas — quinze, pares e sequências podem acumular.</p>",
+    hkScoreTitle: "Como contar os pontos",
+    hkScoreBody:
+      "<p>Os pontos seguem as regras oficiais do HK Crib Go:</p>" +
+      "<ul>" +
+      "<li><strong>Quinze</strong> — Qualquer combinação que some exatamente 15: <strong>2 pontos</strong>.</li>" +
+      "<li><strong>Pares e cartas iguais</strong> — 2 cartas = 2 pts · 3 cartas = 6 pts · 4 cartas = 12 pts.</li>" +
+      "<li><strong>Sequência</strong> — Cartas consecutivas (ex. 3-4-5 = 3 pts, 7-8-9-10 = 4 pts).</li>" +
+      "<li><strong>Cor (flush)</strong> — 4 cartas do mesmo naipe: 4 pts; com o corte do mesmo naipe: 6 pts.</li>" +
+      "<li><strong>Nobs</strong> — Valete do mesmo naipe do corte: 1 pt.</li>" +
+      "<li><strong>Corte valete</strong> — Se a carta de corte for um valete: 2 pts (uma vez por round).</li>" +
+      "</ul>" +
+      "<h3>Após a contagem</h3>" +
+      "<p>Cada carta que pontuou fica no lugar: um tom do tema a destaca e um <strong>marcador</strong> indica quantas vezes contou. O corte é tratado da mesma forma se pontuar. Tom e marcadores regulam-se em Menu → Contagem.</p>",
+    hkOptionsTitle: "Opções: versos das cartas e tabuleiros",
+    hkOptionsBody:
+      "<p>Personalize a aparência no menu da aplicação.</p>" +
+      "<h3>Versos das cartas</h3>" +
+      "<ul class=\"option-chips\"><li>Vermelho clássico</li><li>Azul</li><li>Mistério</li></ul>" +
+      "<h3>Tabuleiros</h3>" +
+      "<ul class=\"option-chips\"><li>Carvalho claro</li><li>Cedro avermelhado</li><li>Argila terracotta</li></ul>" +
+      "<h3>Ambientes</h3>" +
+      "<ul class=\"option-chips\"><li>Clássico</li><li>Areia Quente</li><li>Noite Cyber</li></ul>" +
+      "<p>Também pode ajustar animações e a apresentação da contagem (tom e marcadores).</p>",
     hkPageKicker: "Cribbage de Hong Kong • Jogo Android",
     hkPageTagline: "Sem Wi-Fi? É a sua vez.",
     hkPageLead:
@@ -315,11 +357,62 @@
     havenPageTagline: "Fique com o essencial. O resto pode esperar.",
     havenPageLead:
       "No trabalho, na estrada ou enquanto dorme, escolha que chamadas e notificações o podem interromper. Ative o modo que lhe convém ou deixe o Haven fazê-lo conforme o seu horário.",
+    havenFeat1: "<strong>Modos personalizáveis</strong> — Regras para o dia, condução, sono, trabalho, etc.",
+    havenFeat2: "<strong>Escolha Manual / Auto</strong> — Você define o modo no início ou o Haven segue o horário de automação.",
+    havenFeat3: "<strong>Horário automático</strong> — Programe intervalos ao longo da semana.",
+    havenFeat4: "<strong>Histórico</strong> — Veja as interrupções evitadas e o que foi filtrado.",
+    havenFeat5: "<strong>Segurança em primeiro lugar</strong> — Mantém alertas essenciais e acesso de emergência.",
+    havenFeat6: "<strong>Contactos de emergência</strong> — Permita uma segunda chamada rápida a pessoas escolhidas.",
+    hkCapPartie: "Partida em curso",
+    hkCapPointage: "Pontuação de uma mão",
+    hkCapSupport: "Centro de suporte",
+    hkCapMenu: "Fim de round / definições",
+    hkCapPartieAlt: "Partida contra a IA",
+    havenCapHero: "Haven — refúgio digital",
+    havenCapAccueil: "Início e modos",
+    havenCapHistorique: "Histórico de interrupções",
+    havenCapHoraire: "Horário automático",
+    hkWhoTitle: "Quem somos?",
+    hkWhoBody: "<p><strong>HK Crib Go</strong> é um jogo Android de cribbage. Esta política descreve o tratamento de informações quando usa a aplicação.</p>",
+    hkDataTitle: "O HK Crib Go recolhe dados pessoais?",
+    hkDataBody: "<p>O HK Crib Go não recolhe diretamente informações pessoais identificáveis. Pontuações e preferências são guardadas <strong>localmente no dispositivo</strong>. Nenhum dado pessoal é vendido.</p>",
+    hkLocalTitle: "Que informações são guardadas no dispositivo?",
+    hkLocalBody: "<p>A aplicação pode guardar pontuações, recordes, medalhas, estatísticas e preferências. Estes dados ficam no dispositivo e podem ser apagados ao limpar os dados da app ou ao desinstalar.</p>",
+    hkAnalyticsTitle: "Estatísticas de utilização anónimas",
+    hkAnalyticsBody: "<p>O HK Crib Go pode usar <strong>Google Analytics (GA4)</strong> para estatísticas anónimas (aberturas, partidas, etc.) para melhorar a experiência.</p>",
+    hkShareTitle: "Partilha com terceiros",
+    hkShareBody: "<p>O HK Crib Go <strong>não vende</strong> dados pessoais. A única partilha eventual é com o Google Analytics (estatísticas anónimas).</p>",
+    hkDeleteTitle: "Como eliminar os seus dados",
+    hkDeleteBody: "<p>Definições Android → Aplicações → HK Crib Go → Limpar armazenamento / dados, ou desinstalar.</p>",
+    hkChildrenTitle: "Crianças",
+    hkChildrenBody: "<p>O HK Crib Go destina-se ao público em geral e não foi concebido especificamente para crianças com menos de 13 anos.</p>",
+    hkContactTitle: "Contacto",
+    hkContactBody: '<p>Questões de privacidade: <a href="mailto:contact@weidlerstudio.com">contact@weidlerstudio.com</a></p>',
+    hvWhoTitle: "Quem somos?",
+    hvWhoBody: "<p><strong>Haven</strong> é uma aplicação Android da Weidler Studio que ajuda a reduzir interrupções do telemóvel segundo os modos que escolhe.</p>",
+    hvPurposeTitle: "Porque é que o Haven precisa de permissões Android?",
+    hvPurposeBody: "<p>O Haven deve <strong>filtrar interrupções no dispositivo</strong> (chamadas e notificações). A filtragem ocorre <strong>no seu telemóvel</strong>, conforme as suas definições.</p>",
+    hvPermsTitle: "Para que servem as permissões pedidas?",
+    hvPermsBody:
+      "<p>Conforme as funções ativas, o Haven pode pedir:</p><ul><li><strong>Acesso às notificações</strong> — detetar e filtrar notificações segundo as suas regras;</li><li><strong>Filtragem de chamadas</strong> — tratar chamadas recebidas segundo o modo ativo;</li><li><strong>Contactos</strong> — aplicar prioridades às pessoas que escolhe;</li><li><strong>Acesso de utilização</strong> — gatilhos ligados às apps usadas (ex. condução);</li><li><strong>Bluetooth</strong> — gatilhos opcionais de veículo / dispositivo;</li><li><strong>Notificações / serviço em primeiro plano / arranque</strong> — manter a proteção quando o Haven está ativo.</li></ul><p>Pode revogar estes acessos nas definições Android; algumas funções deixarão de funcionar.</p>",
+    hvLocalTitle: "Que informações são guardadas no dispositivo?",
+    hvLocalBody: "<p>Regras, modos, horários e preferências são guardados <strong>localmente</strong>. O Haven não foi concebido para vender contactos nem o conteúdo das notificações.</p>",
+    hvShareTitle: "Partilha com terceiros",
+    hvShareBody: "<p>O Haven <strong>não vende</strong> dados pessoais. Contactos, chamadas e notificações ficam orientados para filtragem local.</p>",
+    hvDeleteTitle: "Como eliminar os seus dados",
+    hvDeleteBody: "<p>Definições Android → Aplicações → Haven → Limpar armazenamento / dados, ou desinstalar. Revogue também os acessos especiais se deixar de usar a app.</p>",
+    hvChildrenTitle: "Crianças",
+    hvChildrenBody: "<p>O Haven destina-se a adultos que gerem interrupções e não foi concebido para crianças com menos de 13 anos.</p>",
+    hvContactTitle: "Contacto",
+    hvContactBody: '<p>Questões de privacidade: <a href="mailto:contact@weidlerstudio.com">contact@weidlerstudio.com</a></p>',
   });
 
   STRINGS.es = Object.assign({}, STRINGS.en, {
     navHome: "Inicio",
     navContact: "Contacto",
+    footer:
+      "<p>© Weidler Studio 2026</p>" +
+      '<p>Webmaster <a href="https://artisanfm.ca" target="_blank" rel="noopener">Artisan FM</a></p>',
     homeTitle: "Nuestras aplicaciones",
     homeLead: "Un juego de cribbage, una herramienta para adaptar tu teléfono a tu día, y más ideas en camino.",
     discover: "Descubrir",
@@ -330,7 +423,46 @@
     galleryTitle: "Galería",
     featuresTitle: "Funciones y opciones",
     privacyTitle: "Política de privacidad",
+    hkFeat1: "<strong>Personalización</strong> — Dorsos de cartas, tableros y opciones de conteo.",
+    hkFeat2: "<strong>Puntuación clara</strong> — Puntos bajo las cartas, con marcas cuando una carta cuenta varias veces.",
+    hkFeat3: "<strong>Progreso</strong> — Estadísticas, historial, medallas y trofeos.",
     hkFeat4: "<strong>Soporte integrado con asistencia por IA</strong> — Informa un error, propone una mejora o haz una pregunta. Se necesita conexión a Internet para enviar el mensaje.",
+    hkFeat5: "<strong>Sin conexión</strong> — Juega el núcleo del juego sin Internet.",
+    hkFeat6: "<strong>Multilingüe</strong> — Interfaz en seis idiomas: inglés, francés, portugués, español, chino y japonés.",
+    hkHowTitle: "Cómo jugar",
+    hkHowBody:
+      "<p>El objetivo es obtener el máximo de puntos en <strong>3 rondas</strong>.</p>" +
+      "<h3>Cómo funciona una ronda</h3>" +
+      "<p>Cada ronda usa <strong>21 cartas</strong>: 20 para construir las manos y la 21.ª como <strong>carta de corte</strong>.</p>" +
+      "<p>Creas:</p>" +
+      "<ul><li><strong>4 manos abiertas</strong></li><li><strong>1 cribble</strong> (mano cerrada)</li></ul>" +
+      "<p>Las cartas <strong>5, 10, 15 y 20</strong> siempre van al cribble. Luego coloca el resto para formar las mejores combinaciones. Cuando las 20 cartas están colocadas, se revela el corte y empieza el conteo.</p>" +
+      "<h3>Fin de partida</h3>" +
+      "<p>En modo solo, el objetivo es alcanzar <strong>121 puntos</strong> en 3 rondas. Contra un rival, gana el mejor total; en caso de empate, hay empate.</p>" +
+      "<p><strong>Consejo:</strong> construye varias combinaciones con las mismas cartas — quinces, pares y secuencias pueden acumularse.</p>",
+    hkScoreTitle: "Cómo contar los puntos",
+    hkScoreBody:
+      "<p>Los puntos siguen las reglas oficiales de HK Crib Go:</p>" +
+      "<ul>" +
+      "<li><strong>Quince</strong> — Cualquier combinación que sume exactamente 15: <strong>2 puntos</strong>.</li>" +
+      "<li><strong>Pares y cartas iguales</strong> — 2 cartas = 2 pts · 3 cartas = 6 pts · 4 cartas = 12 pts.</li>" +
+      "<li><strong>Secuencia</strong> — Cartas consecutivas (ej. 3-4-5 = 3 pts, 7-8-9-10 = 4 pts).</li>" +
+      "<li><strong>Color (flush)</strong> — 4 cartas del mismo palo: 4 pts; con el corte del mismo palo: 6 pts.</li>" +
+      "<li><strong>Nobs</strong> — Jota del mismo palo que el corte: 1 pt.</li>" +
+      "<li><strong>Corte jota</strong> — Si la carta de corte es una jota: 2 pts (una vez por ronda).</li>" +
+      "</ul>" +
+      "<h3>Después del conteo</h3>" +
+      "<p>Cada carta que puntuó permanece en su sitio: un tinte del tema la destaca y una <strong>pastilla</strong> indica cuántas veces contó. El corte se trata igual si puntúa. Tinte y pastillas se ajustan en Menú → Conteo.</p>",
+    hkOptionsTitle: "Opciones: dorsos y tableros",
+    hkOptionsBody:
+      "<p>Personaliza la apariencia desde el menú de la app.</p>" +
+      "<h3>Dorsos de cartas</h3>" +
+      "<ul class=\"option-chips\"><li>Rojo clásico</li><li>Azul</li><li>Misterio</li></ul>" +
+      "<h3>Tableros</h3>" +
+      "<ul class=\"option-chips\"><li>Roble claro</li><li>Cedro rojizo</li><li>Arcilla terracotta</li></ul>" +
+      "<h3>Ambientes</h3>" +
+      "<ul class=\"option-chips\"><li>Clásico</li><li>Arena Cálida</li><li>Noche Cyber</li></ul>" +
+      "<p>También puedes ajustar animaciones y la visualización del conteo (tinte y pastillas).</p>",
     hkPageKicker: "Cribbage de Hong Kong • Juego Android",
     hkPageTagline: "¿Sin Wi-Fi? Te toca.",
     hkPageLead:
@@ -339,11 +471,62 @@
     havenPageTagline: "Quédate con lo esencial. El resto puede esperar.",
     havenPageLead:
       "En el trabajo, en la carretera o mientras duermes, elige qué llamadas y notificaciones pueden interrumpirte. Activa el modo que te convenga o deja que Haven lo haga según tu horario.",
+    havenFeat1: "<strong>Modos personalizables</strong> — Reglas para el día, la conducción, el sueño, el trabajo, etc.",
+    havenFeat2: "<strong>Elección Manual / Auto</strong> — Tú eliges el modo en inicio o Haven sigue tu horario de automatización.",
+    havenFeat3: "<strong>Horario automático</strong> — Programa franjas a lo largo de la semana.",
+    havenFeat4: "<strong>Historial</strong> — Ve las interrupciones evitadas y lo filtrado.",
+    havenFeat5: "<strong>Seguridad primero</strong> — Conserva alertas esenciales y el acceso de emergencia.",
+    havenFeat6: "<strong>Contactos de emergencia</strong> — Permite una segunda llamada rápida a personas elegidas.",
+    hkCapPartie: "Partida en curso",
+    hkCapPointage: "Puntuación de una mano",
+    hkCapSupport: "Centro de soporte",
+    hkCapMenu: "Fin de ronda / ajustes",
+    hkCapPartieAlt: "Partida contra la IA",
+    havenCapHero: "Haven — refugio digital",
+    havenCapAccueil: "Inicio y modos",
+    havenCapHistorique: "Historial de interrupciones",
+    havenCapHoraire: "Horario automático",
+    hkWhoTitle: "¿Quiénes somos?",
+    hkWhoBody: "<p><strong>HK Crib Go</strong> es un juego Android de tipo cribbage. Esta política describe el tratamiento de la información cuando usas la aplicación.</p>",
+    hkDataTitle: "¿HK Crib Go recoge datos personales?",
+    hkDataBody: "<p>HK Crib Go no recoge directamente información personal identificable. Puntuaciones y preferencias se guardan <strong>localmente en tu dispositivo</strong>. No se venden datos personales.</p>",
+    hkLocalTitle: "¿Qué información se guarda en el dispositivo?",
+    hkLocalBody: "<p>La app puede guardar puntuaciones, récords, medallas, estadísticas y preferencias. Esos datos permanecen en el dispositivo y pueden borrarse al limpiar datos o desinstalar.</p>",
+    hkAnalyticsTitle: "Estadísticas de uso anónimas",
+    hkAnalyticsBody: "<p>HK Crib Go puede usar <strong>Google Analytics (GA4)</strong> para estadísticas anónimas (aperturas, partidas, etc.) y mejorar la experiencia.</p>",
+    hkShareTitle: "Compartir con terceros",
+    hkShareBody: "<p>HK Crib Go <strong>no vende</strong> datos personales. El único intercambio posible es con Google Analytics (estadísticas anónimas).</p>",
+    hkDeleteTitle: "Cómo eliminar tus datos",
+    hkDeleteBody: "<p>Ajustes de Android → Aplicaciones → HK Crib Go → Borrar almacenamiento / datos, o desinstalar.</p>",
+    hkChildrenTitle: "Niños",
+    hkChildrenBody: "<p>HK Crib Go está dirigido al público general y no está diseñado específicamente para menores de 13 años.</p>",
+    hkContactTitle: "Contacto",
+    hkContactBody: '<p>Preguntas de privacidad: <a href="mailto:contact@weidlerstudio.com">contact@weidlerstudio.com</a></p>',
+    hvWhoTitle: "¿Quiénes somos?",
+    hvWhoBody: "<p><strong>Haven</strong> es una aplicación Android de Weidler Studio que ayuda a reducir las interrupciones del teléfono según los modos que eliges.</p>",
+    hvPurposeTitle: "¿Por qué Haven necesita permisos de Android?",
+    hvPurposeBody: "<p>Haven debe <strong>filtrar interrupciones en el dispositivo</strong> (llamadas y notificaciones). El filtrado ocurre <strong>en tu teléfono</strong>, según tus ajustes.</p>",
+    hvPermsTitle: "¿Para qué sirven los permisos solicitados?",
+    hvPermsBody:
+      "<p>Según las funciones activas, Haven puede pedir:</p><ul><li><strong>Acceso a notificaciones</strong> — detectar y filtrar notificaciones según tus reglas;</li><li><strong>Filtrado de llamadas</strong> — tratar llamadas entrantes según el modo activo;</li><li><strong>Contactos</strong> — aplicar prioridades a las personas que eliges;</li><li><strong>Acceso de uso</strong> — desencadenantes ligados a las apps usadas (p. ej. conducción);</li><li><strong>Bluetooth</strong> — desencadenantes opcionales de vehículo / dispositivo;</li><li><strong>Notificaciones / servicio en primer plano / inicio</strong> — mantener la protección cuando Haven está activo.</li></ul><p>Puedes revocar estos accesos en los ajustes de Android; algunas funciones dejarán de funcionar.</p>",
+    hvLocalTitle: "¿Qué información se guarda en el dispositivo?",
+    hvLocalBody: "<p>Reglas, modos, horarios y preferencias se guardan <strong>localmente</strong>. Haven no está diseñada para vender contactos ni el contenido de las notificaciones.</p>",
+    hvShareTitle: "Compartir con terceros",
+    hvShareBody: "<p>Haven <strong>no vende</strong> datos personales. Contactos, llamadas y notificaciones se orientan al filtrado local.</p>",
+    hvDeleteTitle: "Cómo eliminar tus datos",
+    hvDeleteBody: "<p>Ajustes de Android → Aplicaciones → Haven → Borrar almacenamiento / datos, o desinstalar. Revoca también los accesos especiales si dejas de usar la app.</p>",
+    hvChildrenTitle: "Niños",
+    hvChildrenBody: "<p>Haven está dirigida a adultos que gestionan interrupciones y no está diseñada para menores de 13 años.</p>",
+    hvContactTitle: "Contacto",
+    hvContactBody: '<p>Preguntas de privacidad: <a href="mailto:contact@weidlerstudio.com">contact@weidlerstudio.com</a></p>',
   });
 
   STRINGS.zh = Object.assign({}, STRINGS.en, {
     navHome: "首页",
     navContact: "联系",
+    footer:
+      "<p>© Weidler Studio 2026</p>" +
+      '<p>网站管理员 <a href="https://artisanfm.ca" target="_blank" rel="noopener">Artisan FM</a></p>',
     homeTitle: "我们的应用",
     homeLead: "一款克里比奇游戏、一款帮你按一天节奏调整手机的工具，以及更多正在筹备的想法。",
     discover: "了解更多",
@@ -354,7 +537,46 @@
     galleryTitle: "图库",
     featuresTitle: "功能与选项",
     privacyTitle: "隐私政策",
+    hkFeat1: "<strong>个性化</strong> — 牌背、计分板与计分选项。",
+    hkFeat2: "<strong>直观计分</strong> — 点数显示在牌下，一牌多次计分时有标记。",
+    hkFeat3: "<strong>进度</strong> — 统计、历史、奖牌与奖杯。",
     hkFeat4: "<strong>内置支持（含 AI 协助）</strong> — 报告错误、提出改进建议或提问。发送消息需要互联网连接。",
+    hkFeat5: "<strong>离线</strong> — 核心玩法无需联网。",
+    hkFeat6: "<strong>多语言</strong> — 界面支持六种语言：英语、法语、葡萄牙语、西班牙语、中文与日语。",
+    hkHowTitle: "怎么玩",
+    hkHowBody:
+      "<p>目标是在 <strong>3 回合</strong>内尽可能多得分。</p>" +
+      "<h3>一回合怎么进行</h3>" +
+      "<p>每回合使用 <strong>21 张牌</strong>：20 张用来组手牌，第 21 张是<strong>切牌</strong>。</p>" +
+      "<p>你需要组成：</p>" +
+      "<ul><li><strong>4 个明牌手</strong></li><li><strong>1 个 cribble</strong>（暗牌手）</li></ul>" +
+      "<p><strong>5、10、15、20</strong> 号牌始终放入 cribble。再摆放其余牌以形成最佳组合。20 张牌放完后揭开切牌并开始计分。</p>" +
+      "<h3>终局</h3>" +
+      "<p>单人模式目标是在 3 回合内达到 <strong>121 分</strong>。对战时总分更高者获胜；平分则平局。</p>" +
+      "<p><strong>提示：</strong>尽量用同一批牌凑出多种组合——十五、对子与顺子可以叠加。</p>",
+    hkScoreTitle: "如何计分",
+    hkScoreBody:
+      "<p>计分遵循 HK Crib Go 官方规则：</p>" +
+      "<ul>" +
+      "<li><strong>十五</strong> — 任意合计恰好为 15 的组合：<strong>2 分</strong>。</li>" +
+      "<li><strong>对子与相同牌</strong> — 2 张 = 2 分 · 3 张 = 6 分 · 4 张 = 12 分。</li>" +
+      "<li><strong>顺子</strong> — 连续牌（如 3-4-5 = 3 分，7-8-9-10 = 4 分）。</li>" +
+      "<li><strong>同花</strong> — 4 张同花色：4 分；切牌同花则 6 分。</li>" +
+      "<li><strong>Nobs</strong> — 与切牌同花色的 J：1 分。</li>" +
+      "<li><strong>切牌为 J</strong> — 若切牌是 J：2 分（每回合一次）。</li>" +
+      "</ul>" +
+      "<h3>计分之后</h3>" +
+      "<p>得分的牌留在原位：主题色调会高亮，并有<strong>角标</strong>显示计分次数。切牌若得分同样处理。可在 菜单 → 计分 中开关色调与角标。</p>",
+    hkOptionsTitle: "选项：牌背与计分板",
+    hkOptionsBody:
+      "<p>可在应用菜单中自定义外观。</p>" +
+      "<h3>牌背</h3>" +
+      "<ul class=\"option-chips\"><li>经典红</li><li>蓝色</li><li>神秘</li></ul>" +
+      "<h3>计分板</h3>" +
+      "<ul class=\"option-chips\"><li>浅橡木</li><li>暖雪松</li><li>陶土色</li></ul>" +
+      "<h3>氛围</h3>" +
+      "<ul class=\"option-chips\"><li>经典</li><li>暖沙</li><li>赛博夜</li></ul>" +
+      "<p>还可调整动画与计分显示（色调与角标）。</p>",
     hkPageKicker: "香港克里比奇 • Android 游戏",
     hkPageTagline: "没有 Wi-Fi？该你出牌了。",
     hkPageLead:
@@ -363,11 +585,62 @@
     havenPageTagline: "留下重要的。其余可以等。",
     havenPageLead:
       "工作时、路上或睡觉时，选择哪些来电和通知可以打断你。开启适合你的模式，或让 Haven 按你的日程自动切换。",
+    havenFeat1: "<strong>可自定义模式</strong> — 适用于白天、驾驶、睡眠、工作等。",
+    havenFeat2: "<strong>手动 / 自动</strong> — 在首页选择模式，或让 Haven 按自动化日程执行。",
+    havenFeat3: "<strong>自动日程</strong> — 按周设置时间段。",
+    havenFeat4: "<strong>历史</strong> — 查看已避免的打扰与过滤内容。",
+    havenFeat5: "<strong>安全优先</strong> — 保留必要提醒与紧急联络。",
+    havenFeat6: "<strong>紧急联系人</strong> — 可为选定联系人允许快速二次呼叫。",
+    hkCapPartie: "对局进行中",
+    hkCapPointage: "一手计分",
+    hkCapSupport: "支持中心",
+    hkCapMenu: "回合结束 / 设置",
+    hkCapPartieAlt: "对战 AI",
+    havenCapHero: "Haven — 数字避风港",
+    havenCapAccueil: "首页与模式",
+    havenCapHistorique: "打扰历史",
+    havenCapHoraire: "自动日程",
+    hkWhoTitle: "我们是谁？",
+    hkWhoBody: "<p><strong>HK Crib Go</strong> 是一款 Android 克里比奇类游戏。本政策说明您使用应用时信息如何处理。</p>",
+    hkDataTitle: "HK Crib Go 会收集个人数据吗？",
+    hkDataBody: "<p>HK Crib Go 不会直接收集可识别个人身份的信息。分数与偏好保存在<strong>设备本地</strong>。不会出售个人数据。</p>",
+    hkLocalTitle: "设备上保存哪些信息？",
+    hkLocalBody: "<p>应用可能保存分数、纪录、奖牌、对局统计与偏好。这些数据留在设备上，可通过清除应用数据或卸载删除。</p>",
+    hkAnalyticsTitle: "匿名使用统计",
+    hkAnalyticsBody: "<p>HK Crib Go 可能使用 <strong>Google Analytics (GA4)</strong> 收集匿名使用统计（打开次数、对局等）以改进体验。</p>",
+    hkShareTitle: "与第三方共享",
+    hkShareBody: "<p>HK Crib Go <strong>不出售</strong>个人数据。可能的唯一第三方交换是 Google Analytics（匿名统计）。</p>",
+    hkDeleteTitle: "如何删除您的数据",
+    hkDeleteBody: "<p>Android 设置 → 应用 → HK Crib Go → 清除存储 / 数据，或卸载应用。</p>",
+    hkChildrenTitle: "儿童",
+    hkChildrenBody: "<p>HK Crib Go 面向普通用户，并非专为 13 岁以下儿童设计。</p>",
+    hkContactTitle: "联系",
+    hkContactBody: '<p>隐私相关问题：<a href="mailto:contact@weidlerstudio.com">contact@weidlerstudio.com</a></p>',
+    hvWhoTitle: "我们是谁？",
+    hvWhoBody: "<p><strong>Haven</strong> 是 Weidler Studio 的 Android 应用，可根据您选择的模式帮助减少手机打扰。</p>",
+    hvPurposeTitle: "为什么 Haven 需要 Android 权限？",
+    hvPurposeBody: "<p>Haven 必须在设备上<strong>过滤打扰</strong>（来电与通知）。过滤在<strong>您的手机本地</strong>进行，依据您的设置。</p>",
+    hvPermsTitle: "所请求权限的用途是什么？",
+    hvPermsBody:
+      "<p>根据启用的功能，Haven 可能请求：</p><ul><li><strong>通知访问</strong> — 按规则检测并过滤通知；</li><li><strong>来电过滤</strong> — 按当前模式处理来电；</li><li><strong>通讯录</strong> — 对您选择的联系人应用优先级；</li><li><strong>使用情况访问</strong> — 与所用应用相关的触发（如驾驶）；</li><li><strong>蓝牙</strong> — 可选的车辆 / 设备触发；</li><li><strong>通知 / 前台服务 / 开机启动</strong> — 在 Haven 开启时保持保护。</li></ul><p>可在 Android 设置中撤销这些权限；部分功能将停止工作。</p>",
+    hvLocalTitle: "设备上保存哪些信息？",
+    hvLocalBody: "<p>规则、模式、日程与偏好保存在<strong>本地</strong>。Haven 不会出售通讯录或通知内容。</p>",
+    hvShareTitle: "与第三方共享",
+    hvShareBody: "<p>Haven <strong>不出售</strong>个人数据。联系人、来电与通知面向本地过滤。</p>",
+    hvDeleteTitle: "如何删除您的数据",
+    hvDeleteBody: "<p>Android 设置 → 应用 → Haven → 清除存储 / 数据，或卸载。若不再使用，请一并撤销特殊权限。</p>",
+    hvChildrenTitle: "儿童",
+    hvChildrenBody: "<p>Haven 面向管理手机打扰的成人用户，并非为 13 岁以下儿童设计。</p>",
+    hvContactTitle: "联系",
+    hvContactBody: '<p>隐私相关问题：<a href="mailto:contact@weidlerstudio.com">contact@weidlerstudio.com</a></p>',
   });
 
   STRINGS.ja = Object.assign({}, STRINGS.en, {
     navHome: "ホーム",
     navContact: "お問い合わせ",
+    footer:
+      "<p>© Weidler Studio 2026</p>" +
+      '<p>ウェブマスター <a href="https://artisanfm.ca" target="_blank" rel="noopener">Artisan FM</a></p>',
     homeTitle: "私たちのアプリ",
     homeLead: "クリベッジのゲーム、一日の流れに合わせてスマホを整えるツール、そして準備中のアイデアも。",
     discover: "詳しく見る",
@@ -378,7 +651,46 @@
     galleryTitle: "ギャラリー",
     featuresTitle: "機能とオプション",
     privacyTitle: "プライバシーポリシー",
+    hkFeat1: "<strong>カスタマイズ</strong> — カード裏面、ボード、スコア表示の設定。",
+    hkFeat2: "<strong>わかりやすい得点</strong> — カード下に点数。複数回カウント時はバッジ表示。",
+    hkFeat3: "<strong>進捗</strong> — 統計、履歴、メダル、トロフィー。",
     hkFeat4: "<strong>AI アシスト付きサポート機能</strong> — バグ報告、改善提案、質問ができます。メッセージ送信にはインターネット接続が必要です。",
+    hkFeat5: "<strong>オフライン</strong> — コアプレイはネット不要。",
+    hkFeat6: "<strong>多言語</strong> — UI は英語・フランス語・ポルトガル語・スペイン語・中国語・日本語の6言語。",
+    hkHowTitle: "遊び方",
+    hkHowBody:
+      "<p><strong>3ラウンド</strong>でできるだけ多くの得点を目指します。</p>" +
+      "<h3>ラウンドの流れ</h3>" +
+      "<p>各ラウンドは<strong>21枚</strong>：20枚で手を作り、21枚目が<strong>カットカード</strong>です。</p>" +
+      "<p>作成するもの：</p>" +
+      "<ul><li><strong>オープンハンド4つ</strong></li><li><strong>cribble 1つ</strong>（クローズド）</li></ul>" +
+      "<p><strong>5・10・15・20</strong> は常に cribble へ。残りのカードで最良の組み合わせを作ります。20枚を置いたらカットを公開して得点計算です。</p>" +
+      "<h3>終了</h3>" +
+      "<p>ソロでは3ラウンドで<strong>121点</strong>を目指します。対戦では合計が高い方が勝ち。同点は引き分けです。</p>" +
+      "<p><strong>ヒント：</strong>同じカードで複数の組み合わせを狙いましょう。15、ペア、ランは重なります。</p>",
+    hkScoreTitle: "得点の数え方",
+    hkScoreBody:
+      "<p>得点は HK Crib Go の公式ルールに従います：</p>" +
+      "<ul>" +
+      "<li><strong>15</strong> — 合計がちょうど15になる組み合わせ：<strong>2点</strong>。</li>" +
+      "<li><strong>ペア／同一札</strong> — 2枚=2点 · 3枚=6点 · 4枚=12点。</li>" +
+      "<li><strong>ラン</strong> — 連続札（例：3-4-5=3点、7-8-9-10=4点）。</li>" +
+      "<li><strong>フラッシュ</strong> — 同スート4枚：4点。カットも同スートなら6点。</li>" +
+      "<li><strong>ノブス</strong> — カットと同スートの J：1点。</li>" +
+      "<li><strong>カットが J</strong> — カットが J のとき：2点（ラウンドに1回）。</li>" +
+      "</ul>" +
+      "<h3>計算のあと</h3>" +
+      "<p>得点したカードはそのまま。テーマ色で強調され、<strong>バッジ</strong>が回数を示します。カットも得点すれば同様です。色とバッジは メニュー → 得点 で切替え。</p>",
+    hkOptionsTitle: "オプション：裏面とボード",
+    hkOptionsBody:
+      "<p>アプリのメニューから見た目を変更できます。</p>" +
+      "<h3>カード裏面</h3>" +
+      "<ul class=\"option-chips\"><li>クラシック赤</li><li>ブルー</li><li>ミステリー</li></ul>" +
+      "<h3>ボード</h3>" +
+      "<ul class=\"option-chips\"><li>明るいオーク</li><li>暖かいシダー</li><li>テラコッタ</li></ul>" +
+      "<h3>雰囲気</h3>" +
+      "<ul class=\"option-chips\"><li>クラシック</li><li>ウォームサンド</li><li>サイバーナイト</li></ul>" +
+      "<p>アニメーションや得点表示（色・バッジ）も調整できます。</p>",
     hkPageKicker: "香港クリベッジ • Android ゲーム",
     hkPageTagline: "Wi-Fi がなくても、あなたの番です。",
     hkPageLead:
@@ -387,6 +699,54 @@
     havenPageTagline: "大切なものは残して。あとは後で。",
     havenPageLead:
       "仕事中、運転中、睡眠中でも、どの着信や通知に割り込ませるかを選べます。合うモードをオンにするか、スケジュールに合わせて Haven に任せられます。",
+    havenFeat1: "<strong>カスタムモード</strong> — 昼・運転・睡眠・仕事などに合わせたルール。",
+    havenFeat2: "<strong>手動 / 自動</strong> — ホームでモードを選ぶか、自動化スケジュールに任せる。",
+    havenFeat3: "<strong>自動スケジュール</strong> — 週単位で時間帯を設定。",
+    havenFeat4: "<strong>履歴</strong> — 避けた割り込みとフィルタ内容を確認。",
+    havenFeat5: "<strong>安全優先</strong> — 重要な通知と緊急アクセスを維持。",
+    havenFeat6: "<strong>緊急連絡先</strong> — 選んだ相手への素早い再コールを許可可能。",
+    hkCapPartie: "対局中",
+    hkCapPointage: "ハンドの得点",
+    hkCapSupport: "サポートセンター",
+    hkCapMenu: "ラウンド終了 / 設定",
+    hkCapPartieAlt: "AI との対局",
+    havenCapHero: "Haven — デジタルの避難所",
+    havenCapAccueil: "ホームとモード",
+    havenCapHistorique: "割り込み履歴",
+    havenCapHoraire: "自動スケジュール",
+    hkWhoTitle: "私たちは誰ですか？",
+    hkWhoBody: "<p><strong>HK Crib Go</strong> は Android のクリベッジ系ゲームです。本ポリシーはアプリ利用時の情報の扱いを説明します。</p>",
+    hkDataTitle: "HK Crib Go は個人データを収集しますか？",
+    hkDataBody: "<p>HK Crib Go は直接の個人識別情報を収集しません。スコアや設定は<strong>端末にローカル保存</strong>されます。個人データの販売はありません。</p>",
+    hkLocalTitle: "端末には何が保存されますか？",
+    hkLocalBody: "<p>スコア、記録、メダル、統計、設定などを保存できます。データは端末に残り、アプリデータの削除またはアンインストールで消去できます。</p>",
+    hkAnalyticsTitle: "匿名の利用統計",
+    hkAnalyticsBody: "<p>体験向上のため、<strong>Google Analytics (GA4)</strong> で匿名の利用統計（起動、対局など）を使う場合があります。</p>",
+    hkShareTitle: "第三者との共有",
+    hkShareBody: "<p>HK Crib Go は個人データを<strong>販売しません</strong>。あり得る第三者連携は Google Analytics（匿名統計）のみです。</p>",
+    hkDeleteTitle: "データの削除方法",
+    hkDeleteBody: "<p>Android 設定 → アプリ → HK Crib Go → ストレージ / データを消去、またはアンインストール。</p>",
+    hkChildrenTitle: "子どもについて",
+    hkChildrenBody: "<p>HK Crib Go は一般向けであり、13歳未満の子ども専用には設計されていません。</p>",
+    hkContactTitle: "お問い合わせ",
+    hkContactBody: '<p>プライバシーに関するお問い合わせ：<a href="mailto:contact@weidlerstudio.com">contact@weidlerstudio.com</a></p>',
+    hvWhoTitle: "私たちは誰ですか？",
+    hvWhoBody: "<p><strong>Haven</strong> は Weidler Studio の Android アプリで、選んだモードに応じて端末の割り込みを減らします。</p>",
+    hvPurposeTitle: "なぜ Haven に Android 権限が必要ですか？",
+    hvPurposeBody: "<p>Haven は端末上で着信や通知などの<strong>割り込みをフィルタ</strong>する必要があります。フィルタは<strong>あなたの端末上</strong>で、設定に従って行われます。</p>",
+    hvPermsTitle: "要求される権限の用途は？",
+    hvPermsBody:
+      "<p>有効な機能に応じて Haven は次を求めることがあります：</p><ul><li><strong>通知へのアクセス</strong> — ルールに従って通知を検出・フィルタ；</li><li><strong>着信スクリーニング</strong> — モードに応じて着信を処理；</li><li><strong>連絡先</strong> — 選んだ相手に優先ルールを適用；</li><li><strong>使用状況アクセス</strong> — 利用アプリに基づくトリガー（例：運転）；</li><li><strong>Bluetooth</strong> — 車両 / 端末の任意トリガー；</li><li><strong>通知 / フォアグラウンドサービス / 起動時</strong> — Haven 作動中の保護を維持。</li></ul><p>Android 設定で取り消せます。一部機能は停止します。</p>",
+    hvLocalTitle: "端末には何が保存されますか？",
+    hvLocalBody: "<p>ルール、モード、スケジュール、設定は<strong>ローカル</strong>に保存されます。連絡先や通知内容の販売を目的としません。</p>",
+    hvShareTitle: "第三者との共有",
+    hvShareBody: "<p>Haven は個人データを<strong>販売しません</strong>。連絡先・着信・通知はローカルフィルタ向けです。</p>",
+    hvDeleteTitle: "データの削除方法",
+    hvDeleteBody: "<p>Android 設定 → アプリ → Haven → ストレージ / データを消去、またはアンインストール。利用をやめる場合は特別権限も取り消してください。</p>",
+    hvChildrenTitle: "子どもについて",
+    hvChildrenBody: "<p>Haven は割り込みを管理する成人向けであり、13歳未満の子ども向けには設計されていません。</p>",
+    hvContactTitle: "お問い合わせ",
+    hvContactBody: '<p>プライバシーに関するお問い合わせ：<a href="mailto:contact@weidlerstudio.com">contact@weidlerstudio.com</a></p>',
   });
 
   function t(key) {
