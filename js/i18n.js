@@ -77,12 +77,49 @@
     hkPageTitle: "HK Crib Go",
     hkPageLead:
       "Né de l’envie de jouer au cribbage dehors sans que les cartes s’envolent, HK Crib Go propose des parties rapides, entièrement hors ligne, avec adversaires IA et une interface en six langues.",
-    hkFeat1: "<strong>Personnalisation</strong> — Choix des cartes, de la table et des options de comptage.",
-    hkFeat2: "<strong>Pointage intuitif</strong> — Points affichés sous les cartes, avec pastilles quand une carte compte dans plusieurs combinaisons.",
+    hkFeat1: "<strong>Personnalisation</strong> — Dos de cartes, plateaux et options de comptage.",
+    hkFeat2: "<strong>Pointage intuitif</strong> — Points sous les cartes, avec pastilles quand une carte compte plusieurs fois.",
     hkFeat3: "<strong>Progression</strong> — Statistiques, historique, médailles et trophées.",
     hkFeat4: "<strong>Support intégré</strong> — Centre d’assistance pour signaler un bug, une suggestion ou une question.",
     hkFeat5: "<strong>Hors ligne</strong> — Jouez sans connexion Internet pour le cœur du jeu.",
-    hkFeat6: "<strong>Multilingue</strong> — Interface disponible en six langues.",
+    hkFeat6: "<strong>Multilingue</strong> — Interface en six langues : anglais, français, portugais, espagnol, chinois, japonais.",
+    hkHowTitle: "Comment jouer",
+    hkHowBody:
+      "<p>Le but est d’obtenir le plus de points possible en <strong>3 rounds</strong>.</p>" +
+      "<h3>Déroulement d’un round</h3>" +
+      "<p>Chaque round utilise <strong>21 cartes</strong> : 20 pour construire les mains, et la 21<sup>e</sup> comme <strong>carte de coupe</strong>.</p>" +
+      "<p>Vous créez :</p>" +
+      "<ul><li><strong>4 mains ouvertes</strong></li><li><strong>1 cribble</strong> (main fermée)</li></ul>" +
+      "<p>Les cartes <strong>5, 10, 15 et 20</strong> sont toujours placées dans le cribble. Placez ensuite les autres cartes pour former les meilleures combinaisons. Quand les 20 cartes sont posées, la coupe est révélée et le comptage commence.</p>" +
+      "<h3>Fin de partie</h3>" +
+      "<p>En solo, l’objectif est d’atteindre <strong>121 points</strong> en 3 rounds. Contre un adversaire, le meilleur total l’emporte ; en cas d’égalité, match nul.</p>" +
+      "<p><strong>Conseil :</strong> visez plusieurs combinaisons avec les mêmes cartes — quinze, paires et suite peuvent se cumuler.</p>",
+    hkScoreTitle: "Comment compter les points",
+    hkScoreBody:
+      "<p>Les points suivent les règles officielles de HK Crib Go :</p>" +
+      "<ul>" +
+      "<li><strong>Quinze</strong> — Toute combinaison totalisant exactement 15 : <strong>2 points</strong>.</li>" +
+      "<li><strong>Paires et cartes identiques</strong> — 2 cartes = 2 pts · 3 cartes = 6 pts · 4 cartes = 12 pts.</li>" +
+      "<li><strong>Suite</strong> — Cartes qui se suivent (ex. 3-4-5 = 3 pts, 7-8-9-10 = 4 pts).</li>" +
+      "<li><strong>Couleur (flush)</strong> — 4 cartes de la même couleur : 4 pts ; avec la coupe de la même couleur : 6 pts.</li>" +
+      "<li><strong>Nobs</strong> — Valet de la même couleur que la coupe : 1 pt.</li>" +
+      "<li><strong>Coupe valet</strong> — Si la carte de coupe est un valet : 2 pts (une fois par round).</li>" +
+      "</ul>" +
+      "<h3>Après le comptage</h3>" +
+      "<p>Chaque carte qui a marqué reste en place : une teinte selon le thème la met en évidence, et une <strong>pastille</strong> indique combien de fois elle a compté. La coupe est traitée de la même façon si elle marque. Teinte et pastilles se règlent dans Menu → Comptage.</p>",
+    hkOptionsTitle: "Options : dos de cartes et plateaux",
+    hkOptionsBody:
+      "<p>Personnalisez l’apparence depuis le menu de l’application.</p>" +
+      "<h3>Dos des cartes</h3>" +
+      "<ul class=\"option-chips\"><li>Rouge classique</li><li>Bleu</li><li>Mystère</li></ul>" +
+      "<h3>Plateaux et ambiances</h3>" +
+      "<ul class=\"option-chips\">" +
+      "<li>Classique</li><li>Nuit Classique</li><li>Table de jeu</li><li>Sable Chaud</li>" +
+      "<li>Bambou Zen</li><li>Dragon Oriental</li><li>Pierre &amp; Jardin</li>" +
+      "<li>Papier Lanterne</li><li>Bois Sculpté</li><li>Jade Impérial</li>" +
+      "<li>Casino</li><li>Nuit Cyber</li>" +
+      "</ul>" +
+      "<p>Vous pouvez aussi ajuster les animations et l’affichage du comptage (teinte et pastilles) selon vos préférences.</p>",
     havenPageKicker: "Application",
     havenPageTitle: "Haven",
     havenPageLead:
@@ -156,12 +193,49 @@
     hkPageKicker: "Application",
     hkPageLead:
       "Born from the wish to play cribbage outdoors without cards flying away, HK Crib Go offers fast, fully offline games with AI opponents and a six-language interface.",
-    hkFeat1: "<strong>Customization</strong> — Choose cards, table and scoring options.",
-    hkFeat2: "<strong>Clear scoring</strong> — Points under the cards, with markers when a card counts in several combinations.",
+    hkFeat1: "<strong>Customization</strong> — Card backs, boards and scoring options.",
+    hkFeat2: "<strong>Clear scoring</strong> — Points under the cards, with markers when a card counts several times.",
     hkFeat3: "<strong>Progress</strong> — Statistics, history, medals and trophies.",
     hkFeat4: "<strong>Built-in support</strong> — Report a bug, suggestion or question from the app.",
     hkFeat5: "<strong>Offline</strong> — Play the core game without Internet.",
-    hkFeat6: "<strong>Multilingual</strong> — Interface available in six languages.",
+    hkFeat6: "<strong>Multilingual</strong> — Interface in six languages: English, French, Portuguese, Spanish, Chinese, Japanese.",
+    hkHowTitle: "How to play",
+    hkHowBody:
+      "<p>The goal is to score as many points as possible over <strong>3 rounds</strong>.</p>" +
+      "<h3>How a round works</h3>" +
+      "<p>Each round uses <strong>21 cards</strong>: 20 to build hands, and the 21st as the <strong>cut card</strong>.</p>" +
+      "<p>You create:</p>" +
+      "<ul><li><strong>4 open hands</strong></li><li><strong>1 cribble</strong> (closed hand)</li></ul>" +
+      "<p>Cards <strong>5, 10, 15 and 20</strong> always go in the cribble. Then place the remaining cards to form the best combinations. When all 20 cards are placed, the cut is revealed and scoring begins.</p>" +
+      "<h3>End of game</h3>" +
+      "<p>In solo mode, aim for <strong>121 points</strong> in 3 rounds. Against an opponent, the best total wins; a tie is a draw.</p>" +
+      "<p><strong>Tip:</strong> build several combinations with the same cards — fifteens, pairs and runs can stack.</p>",
+    hkScoreTitle: "How to score",
+    hkScoreBody:
+      "<p>Points follow official HK Crib Go rules:</p>" +
+      "<ul>" +
+      "<li><strong>Fifteen</strong> — Any combination totaling exactly 15: <strong>2 points</strong>.</li>" +
+      "<li><strong>Pairs and matching cards</strong> — 2 cards = 2 pts · 3 cards = 6 pts · 4 cards = 12 pts.</li>" +
+      "<li><strong>Run</strong> — Consecutive cards (e.g. 3-4-5 = 3 pts, 7-8-9-10 = 4 pts).</li>" +
+      "<li><strong>Flush</strong> — 4 cards of the same suit: 4 pts; with a matching cut: 6 pts.</li>" +
+      "<li><strong>Nobs</strong> — Jack of the same suit as the cut: 1 pt.</li>" +
+      "<li><strong>Jack cut</strong> — If the cut card is a jack: 2 pts (once per round).</li>" +
+      "</ul>" +
+      "<h3>After scoring</h3>" +
+      "<p>Each scoring card stays in place: a theme tint highlights it, and a <strong>badge</strong> shows how many times it counted. The cut is treated the same way when it scores. Tint and badges can be toggled in Menu → Scoring.</p>",
+    hkOptionsTitle: "Options: card backs and boards",
+    hkOptionsBody:
+      "<p>Customize the look from the in-app menu.</p>" +
+      "<h3>Card backs</h3>" +
+      "<ul class=\"option-chips\"><li>Classic red</li><li>Blue</li><li>Mystery</li></ul>" +
+      "<h3>Boards and themes</h3>" +
+      "<ul class=\"option-chips\">" +
+      "<li>Classic</li><li>Classic Night</li><li>Game Table</li><li>Warm Sand</li>" +
+      "<li>Zen Bamboo</li><li>Oriental Dragon</li><li>Stone &amp; Garden</li>" +
+      "<li>Paper Lantern</li><li>Carved Wood</li><li>Imperial Jade</li>" +
+      "<li>Casino</li><li>Cyber Night</li>" +
+      "</ul>" +
+      "<p>You can also adjust animations and scoring display (tint and badges) to your taste.</p>",
     havenPageKicker: "Application",
     havenPageLead:
       "Haven helps reduce phone interruptions — calls, notifications and other solicitations — while keeping essential communications, according to your modes (manual or automatic).",

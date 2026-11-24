@@ -379,3 +379,37 @@ a.app-card:hover .btn {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+.prose { color: var(--text); }
+.prose p { margin: 0.65rem 0 0; }
+.prose p:first-child { margin-top: 0; }
+.prose h3 {
+  margin: 1.1rem 0 0.35rem;
+  color: var(--title);
+  font-size: 1.02rem;
+}
+.prose ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.15rem;
+}
+.prose li { margin: 0.28rem 0; }
+.prose strong { color: var(--title); }
+
+.option-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.55rem 0 0.85rem;
+  padding: 0;
+  list-style: none;
+}
+
+.option-chips li {
+  margin: 0;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--title);
+  font-size: 0.88rem;
+}
