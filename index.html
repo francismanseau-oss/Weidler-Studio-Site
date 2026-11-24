@@ -23,14 +23,16 @@
     </div>
   </header>
 
-  <main class="wrap">
-    <h1 class="hero-title" data-i18n="homeTitle">Weidler Studio crée des applications</h1>
-    <p class="hero-lead" data-i18n="homeLead"></p>
+  <main class="wrap wrap--home">
+    <section class="home-intro" aria-labelledby="home-title">
+      <h1 class="hero-title" id="home-title" data-i18n="homeTitle">Nos applications</h1>
+      <p class="hero-lead" data-i18n="homeLead"></p>
+    </section>
 
     <section class="apps" aria-label="Applications">
       <a class="app-card" href="apps/hk-crib-go/">
-        <div class="app-card__shot">
-          <img src="assets/hk/partie-en-cours.png" alt="HK Crib Go" width="460" height="920" loading="eager">
+        <div class="app-card__shot app-card__shot--landscape">
+          <img src="assets/hk/partie-en-cours.png" alt="HK Crib Go" width="1024" height="460" loading="eager">
         </div>
         <div class="app-card__body">
           <h2 data-i18n="hkCardTitle">HK Crib Go</h2>
@@ -40,7 +42,7 @@
       </a>
 
       <a class="app-card" href="apps/haven/">
-        <div class="app-card__shot">
+        <div class="app-card__shot app-card__shot--portrait">
           <img src="assets/haven/01-accueil.png" alt="Haven" width="460" height="920" loading="eager">
         </div>
         <div class="app-card__body">
@@ -59,7 +61,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap" data-i18n="footer">© Weidler Studio</div>
+    <div class="wrap" data-i18n-html="footer"></div>
   </footer>
 
   <script src="js/i18n.js"></script>

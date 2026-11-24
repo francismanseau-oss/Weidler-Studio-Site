@@ -43,17 +43,24 @@
     });
   }
 
-  function renderAccordion() {
-    const host = document.getElementById("privacyAccordion");
-    const I = window.WS_I18N;
-    if (!host || !I) return;
-    const app = host.getAttribute("data-app") || "hk";
-    const sections = I.getPrivacySections(app);
+  function wireExclusiveAccordion(host) {
+    host.querySelectorAll("details.acc-item").forEach((details) => {
+      details.addEventListener("toggle", () => {
+        if (!details.open) return;
+        host.querySelectorAll("details.acc-item").forEach((other) => {
+          if (other !== details) other.open = false;
+        });
+      });
+    });
+  }
+
+  function fillAccordion(host, sections, openFirst) {
+    if (!host) return;
     host.innerHTML = "";
     sections.forEach((section, index) => {
       const details = document.createElement("details");
       details.className = "acc-item";
-      if (index === 0) details.open = true;
+      if (openFirst && index === 0) details.open = true;
       const summary = document.createElement("summary");
       summary.textContent = section.title;
       const body = document.createElement("div");
@@ -61,14 +68,36 @@
       body.innerHTML = section.body;
       details.appendChild(summary);
       details.appendChild(body);
-      details.addEventListener("toggle", () => {
-        if (!details.open) return;
-        host.querySelectorAll("details.acc-item").forEach((other) => {
-          if (other !== details) other.open = false;
-        });
-      });
       host.appendChild(details);
     });
+    wireExclusiveAccordion(host);
+  }
+
+  function renderPrivacyAccordion() {
+    const host = document.getElementById("privacyAccordion");
+    const I = window.WS_I18N;
+    if (!host || !I) return;
+    const app = host.getAttribute("data-app") || "hk";
+    fillAccordion(host, I.getPrivacySections(app), false);
+  }
+
+  function renderHkGuideAccordion() {
+    const host = document.getElementById("hkGuideAccordion");
+    const I = window.WS_I18N;
+    if (!host || !I) return;
+    const feats = [1, 2, 3, 4, 5, 6]
+      .map((n) => "<li>" + I.t("hkFeat" + n) + "</li>")
+      .join("");
+    fillAccordion(
+      host,
+      [
+        { title: I.t("hkHowTitle"), body: '<div class="prose">' + I.t("hkHowBody") + "</div>" },
+        { title: I.t("hkScoreTitle"), body: '<div class="prose">' + I.t("hkScoreBody") + "</div>" },
+        { title: I.t("hkOptionsTitle"), body: '<div class="prose">' + I.t("hkOptionsBody") + "</div>" },
+        { title: I.t("featuresTitle"), body: '<ul class="feature-list">' + feats + "</ul>" },
+      ],
+      false
+    );
   }
 
   function markCurrentNav() {
@@ -88,7 +117,8 @@
   function refresh() {
     applyChrome();
     buildLangSwitcher();
-    renderAccordion();
+    renderHkGuideAccordion();
+    renderPrivacyAccordion();
     markCurrentNav();
   }
 

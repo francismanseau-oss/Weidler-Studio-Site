@@ -59,8 +59,8 @@
     navHk: "HK Crib Go",
     navHaven: "Haven",
     navContact: "Contact",
-    homeTitle: "Weidler Studio crée des applications",
-    homeLead: "Découvrez nos applications Android conçues pour Google Play.",
+    homeTitle: "Nos applications",
+    homeLead: "Un jeu de cribbage, un outil pour adapter ton téléphone à ta journée, et d’autres idées en chantier.",
     discover: "Découvrir",
     hkCardTitle: "HK Crib Go",
     hkCardDesc: "Le cribbage Hong Kong, en parties rapides hors ligne sur votre téléphone.",
@@ -69,18 +69,21 @@
     contactTitle: "Contact",
     contactBody: "Une question sur nos applications ou la confidentialité ?",
     contactEmail: "contact@weidlerstudio.com",
-    footer: "© Weidler Studio",
+    footer:
+      "<p>© Weidler Studio 2026</p>" +
+      '<p>Webmestre <a href="https://artisanfm.ca" target="_blank" rel="noopener">Artisan FM</a></p>',
     galleryTitle: "Galerie",
     featuresTitle: "Fonctionnalités et options",
     privacyTitle: "Politique de confidentialité",
-    hkPageKicker: "Application",
+    hkPageKicker: "Cribbage Hong Kong • Jeu Android",
     hkPageTitle: "HK Crib Go",
+    hkPageTagline: "Pas de Wi-Fi? À vous de jouer.",
     hkPageLead:
-      "Né de l’envie de jouer au cribbage dehors sans que les cartes s’envolent, HK Crib Go propose des parties rapides, entièrement hors ligne, avec adversaires IA et une interface en six langues.",
+      "Dans le métro, sous la tente ou en plein vol, lancez une partie rapide de cribbage Hong Kong. Un adversaire IA est toujours prêt à jouer. Le jeu fonctionne entièrement hors ligne et son interface est offerte en six langues.",
     hkFeat1: "<strong>Personnalisation</strong> — Dos de cartes, plateaux et options de comptage.",
     hkFeat2: "<strong>Pointage intuitif</strong> — Points sous les cartes, avec pastilles quand une carte compte plusieurs fois.",
     hkFeat3: "<strong>Progression</strong> — Statistiques, historique, médailles et trophées.",
-    hkFeat4: "<strong>Support intégré</strong> — Centre d’assistance pour signaler un bug, une suggestion ou une question.",
+    hkFeat4: "<strong>Support intégré avec assistance par IA</strong> — Signalez un bug, proposez une amélioration ou posez une question. Une connexion Internet est nécessaire pour envoyer votre message.",
     hkFeat5: "<strong>Hors ligne</strong> — Jouez sans connexion Internet pour le cœur du jeu.",
     hkFeat6: "<strong>Multilingue</strong> — Interface en six langues : anglais, français, portugais, espagnol, chinois, japonais.",
     hkHowTitle: "Comment jouer",
@@ -112,18 +115,16 @@
       "<p>Personnalisez l’apparence depuis le menu de l’application.</p>" +
       "<h3>Dos des cartes</h3>" +
       "<ul class=\"option-chips\"><li>Rouge classique</li><li>Bleu</li><li>Mystère</li></ul>" +
-      "<h3>Plateaux et ambiances</h3>" +
-      "<ul class=\"option-chips\">" +
-      "<li>Classique</li><li>Nuit Classique</li><li>Table de jeu</li><li>Sable Chaud</li>" +
-      "<li>Bambou Zen</li><li>Dragon Oriental</li><li>Pierre &amp; Jardin</li>" +
-      "<li>Papier Lanterne</li><li>Bois Sculpté</li><li>Jade Impérial</li>" +
-      "<li>Casino</li><li>Nuit Cyber</li>" +
-      "</ul>" +
+      "<h3>Plateaux</h3>" +
+      "<ul class=\"option-chips\"><li>Bois chêne clair</li><li>Bois cèdre rougi</li><li>Argile terracotta</li></ul>" +
+      "<h3>Ambiances</h3>" +
+      "<ul class=\"option-chips\"><li>Classique</li><li>Sable Chaud</li><li>Nuit Cyber</li></ul>" +
       "<p>Vous pouvez aussi ajuster les animations et l’affichage du comptage (teinte et pastilles) selon vos préférences.</p>",
-    havenPageKicker: "Application",
+    havenPageKicker: "Gestion des interruptions • Application Android",
     havenPageTitle: "Haven",
+    havenPageTagline: "Gardez l’essentiel. Le reste peut attendre.",
     havenPageLead:
-      "Haven aide à réduire les interruptions du téléphone — appels, notifications et autres sollicitations — tout en préservant les communications essentielles, selon vos modes (manuel ou automatique).",
+      "Au travail, sur la route ou quand vous dormez, choisissez quels appels et notifications peuvent vous interrompre. Activez le mode qui vous convient ou laissez Haven le faire selon votre horaire.",
     havenFeat1: "<strong>Modes personnalisables</strong> — Règles adaptées au jour, à la conduite, au sommeil, au travail, etc.",
     havenFeat2: "<strong>Choix Manuel / Auto</strong> — Vous pilotez le mode sur l’accueil, ou Haven suit votre horaire d’automatisation.",
     havenFeat3: "<strong>Horaire automatique</strong> — Programmez des plages sur la semaine.",
@@ -180,8 +181,11 @@
   STRINGS.en = Object.assign({}, BASE_FR, {
     navHome: "Home",
     navContact: "Contact",
-    homeTitle: "Weidler Studio creates applications",
-    homeLead: "Discover our Android apps designed for Google Play.",
+    footer:
+      "<p>© Weidler Studio 2026</p>" +
+      '<p>Webmaster <a href="https://artisanfm.ca" target="_blank" rel="noopener">Artisan FM</a></p>',
+    homeTitle: "Our apps",
+    homeLead: "A cribbage game, a tool to shape your phone around your day, and more ideas in the works.",
     discover: "Discover",
     hkCardDesc: "Hong Kong cribbage in fast offline games on your phone.",
     havenCardDesc: "Reduce phone interruptions according to your modes and schedule.",
@@ -190,13 +194,14 @@
     galleryTitle: "Gallery",
     featuresTitle: "Features and options",
     privacyTitle: "Privacy policy",
-    hkPageKicker: "Application",
+    hkPageKicker: "Hong Kong cribbage • Android game",
+    hkPageTagline: "No Wi-Fi? Your move.",
     hkPageLead:
-      "Born from the wish to play cribbage outdoors without cards flying away, HK Crib Go offers fast, fully offline games with AI opponents and a six-language interface.",
+      "On the subway, under the tent or mid-flight, start a quick Hong Kong cribbage game. An AI opponent is always ready to play. The game works fully offline and its interface is available in six languages.",
     hkFeat1: "<strong>Customization</strong> — Card backs, boards and scoring options.",
     hkFeat2: "<strong>Clear scoring</strong> — Points under the cards, with markers when a card counts several times.",
     hkFeat3: "<strong>Progress</strong> — Statistics, history, medals and trophies.",
-    hkFeat4: "<strong>Built-in support</strong> — Report a bug, suggestion or question from the app.",
+    hkFeat4: "<strong>Built-in support with AI assistance</strong> — Report a bug, suggest an improvement or ask a question. An Internet connection is required to send your message.",
     hkFeat5: "<strong>Offline</strong> — Play the core game without Internet.",
     hkFeat6: "<strong>Multilingual</strong> — Interface in six languages: English, French, Portuguese, Spanish, Chinese, Japanese.",
     hkHowTitle: "How to play",
@@ -228,17 +233,15 @@
       "<p>Customize the look from the in-app menu.</p>" +
       "<h3>Card backs</h3>" +
       "<ul class=\"option-chips\"><li>Classic red</li><li>Blue</li><li>Mystery</li></ul>" +
-      "<h3>Boards and themes</h3>" +
-      "<ul class=\"option-chips\">" +
-      "<li>Classic</li><li>Classic Night</li><li>Game Table</li><li>Warm Sand</li>" +
-      "<li>Zen Bamboo</li><li>Oriental Dragon</li><li>Stone &amp; Garden</li>" +
-      "<li>Paper Lantern</li><li>Carved Wood</li><li>Imperial Jade</li>" +
-      "<li>Casino</li><li>Cyber Night</li>" +
-      "</ul>" +
+      "<h3>Boards</h3>" +
+      "<ul class=\"option-chips\"><li>Light oak wood</li><li>Warm cedar wood</li><li>Terracotta clay</li></ul>" +
+      "<h3>Themes</h3>" +
+      "<ul class=\"option-chips\"><li>Classic</li><li>Warm Sand</li><li>Cyber Night</li></ul>" +
       "<p>You can also adjust animations and scoring display (tint and badges) to your taste.</p>",
-    havenPageKicker: "Application",
+    havenPageKicker: "Interruption management • Android app",
+    havenPageTagline: "Keep what matters. The rest can wait.",
     havenPageLead:
-      "Haven helps reduce phone interruptions — calls, notifications and other solicitations — while keeping essential communications, according to your modes (manual or automatic).",
+      "At work, on the road or while you sleep, choose which calls and notifications may interrupt you. Turn on the mode that fits, or let Haven follow your schedule.",
     havenFeat1: "<strong>Customizable modes</strong> — Rules for day, driving, sleep, work, and more.",
     havenFeat2: "<strong>Manual / Auto choice</strong> — You pick the mode on Home, or Haven follows your automation schedule.",
     havenFeat3: "<strong>Automatic schedule</strong> — Program weekly time ranges.",
@@ -293,8 +296,8 @@
   STRINGS.pt = Object.assign({}, STRINGS.en, {
     navHome: "Início",
     navContact: "Contacto",
-    homeTitle: "Weidler Studio cria aplicações",
-    homeLead: "Descubra as nossas apps Android pensadas para o Google Play.",
+    homeTitle: "As nossas aplicações",
+    homeLead: "Um jogo de cribbage, uma ferramenta para adaptar o telemóvel ao teu dia, e outras ideias a caminho.",
     discover: "Descobrir",
     hkCardDesc: "Cribbage de Hong Kong em partidas rápidas offline no telemóvel.",
     havenCardDesc: "Reduza interrupções do telemóvel conforme os seus modos e horário.",
@@ -303,17 +306,22 @@
     galleryTitle: "Galeria",
     featuresTitle: "Funcionalidades e opções",
     privacyTitle: "Política de privacidade",
+    hkFeat4: "<strong>Suporte integrado com assistência por IA</strong> — Reporte um bug, sugira uma melhoria ou faça uma pergunta. É necessária ligação à Internet para enviar a mensagem.",
+    hkPageKicker: "Cribbage de Hong Kong • Jogo Android",
+    hkPageTagline: "Sem Wi-Fi? É a sua vez.",
     hkPageLead:
-      "Nascido da vontade de jogar cribbage ao ar livre sem cartas a voar, o HK Crib Go oferece partidas rápidas, totalmente offline, com adversários de IA e interface em seis idiomas.",
+      "No metro, na tenda ou em pleno voo, comece uma partida rápida de cribbage de Hong Kong. Um adversário de IA está sempre pronto a jogar. O jogo funciona totalmente offline e a interface está disponível em seis idiomas.",
+    havenPageKicker: "Gestão de interrupções • Aplicação Android",
+    havenPageTagline: "Fique com o essencial. O resto pode esperar.",
     havenPageLead:
-      "O Haven ajuda a reduzir interrupções do telemóvel — chamadas, notificações e outras solicitações — preservando o essencial, conforme os seus modos.",
+      "No trabalho, na estrada ou enquanto dorme, escolha que chamadas e notificações o podem interromper. Ative o modo que lhe convém ou deixe o Haven fazê-lo conforme o seu horário.",
   });
 
   STRINGS.es = Object.assign({}, STRINGS.en, {
     navHome: "Inicio",
     navContact: "Contacto",
-    homeTitle: "Weidler Studio crea aplicaciones",
-    homeLead: "Descubre nuestras apps Android pensadas para Google Play.",
+    homeTitle: "Nuestras aplicaciones",
+    homeLead: "Un juego de cribbage, una herramienta para adaptar tu teléfono a tu día, y más ideas en camino.",
     discover: "Descubrir",
     hkCardDesc: "Cribbage de Hong Kong en partidas rápidas sin conexión en el teléfono.",
     havenCardDesc: "Reduce las interrupciones del teléfono según tus modos y horario.",
@@ -322,17 +330,22 @@
     galleryTitle: "Galería",
     featuresTitle: "Funciones y opciones",
     privacyTitle: "Política de privacidad",
+    hkFeat4: "<strong>Soporte integrado con asistencia por IA</strong> — Informa un error, propone una mejora o haz una pregunta. Se necesita conexión a Internet para enviar el mensaje.",
+    hkPageKicker: "Cribbage de Hong Kong • Juego Android",
+    hkPageTagline: "¿Sin Wi-Fi? Te toca.",
     hkPageLead:
-      "Nacido del deseo de jugar al cribbage fuera sin que vuelen las cartas, HK Crib Go ofrece partidas rápidas, totalmente sin conexión, con rivales de IA e interfaz en seis idiomas.",
+      "En el metro, bajo la tienda o en pleno vuelo, inicia una partida rápida de cribbage de Hong Kong. Un rival de IA siempre está listo para jugar. El juego funciona totalmente sin conexión y su interfaz está disponible en seis idiomas.",
+    havenPageKicker: "Gestión de interrupciones • Aplicación Android",
+    havenPageTagline: "Quédate con lo esencial. El resto puede esperar.",
     havenPageLead:
-      "Haven ayuda a reducir interrupciones del teléfono — llamadas, notificaciones y otras solicitudes — conservando lo esencial, según tus modos.",
+      "En el trabajo, en la carretera o mientras duermes, elige qué llamadas y notificaciones pueden interrumpirte. Activa el modo que te convenga o deja que Haven lo haga según tu horario.",
   });
 
   STRINGS.zh = Object.assign({}, STRINGS.en, {
     navHome: "首页",
     navContact: "联系",
-    homeTitle: "Weidler Studio 打造应用程序",
-    homeLead: "了解我们面向 Google Play 的 Android 应用。",
+    homeTitle: "我们的应用",
+    homeLead: "一款克里比奇游戏、一款帮你按一天节奏调整手机的工具，以及更多正在筹备的想法。",
     discover: "了解更多",
     hkCardDesc: "香港克里比奇纸牌，手机上快速离线对局。",
     havenCardDesc: "按模式与日程减少手机打扰。",
@@ -341,15 +354,22 @@
     galleryTitle: "图库",
     featuresTitle: "功能与选项",
     privacyTitle: "隐私政策",
-    hkPageLead: "HK Crib Go 让您在户外也能快速离线玩克里比奇，支持 AI 对手与六种语言界面。",
-    havenPageLead: "Haven 按您的模式帮助减少来电与通知等打扰，同时保留必要通讯。",
+    hkFeat4: "<strong>内置支持（含 AI 协助）</strong> — 报告错误、提出改进建议或提问。发送消息需要互联网连接。",
+    hkPageKicker: "香港克里比奇 • Android 游戏",
+    hkPageTagline: "没有 Wi-Fi？该你出牌了。",
+    hkPageLead:
+      "在地铁、帐篷里或飞行途中，随时开一局快速的香港克里比奇。AI 对手随时待命。游戏完全离线可用，界面支持六种语言。",
+    havenPageKicker: "干扰管理 • Android 应用",
+    havenPageTagline: "留下重要的。其余可以等。",
+    havenPageLead:
+      "工作时、路上或睡觉时，选择哪些来电和通知可以打断你。开启适合你的模式，或让 Haven 按你的日程自动切换。",
   });
 
   STRINGS.ja = Object.assign({}, STRINGS.en, {
     navHome: "ホーム",
     navContact: "お問い合わせ",
-    homeTitle: "Weidler Studio はアプリケーションを作ります",
-    homeLead: "Google Play 向けに設計した Android アプリをご紹介します。",
+    homeTitle: "私たちのアプリ",
+    homeLead: "クリベッジのゲーム、一日の流れに合わせてスマホを整えるツール、そして準備中のアイデアも。",
     discover: "詳しく見る",
     hkCardDesc: "香港クリベッジを、端末上で素早くオフライン対戦。",
     havenCardDesc: "モードとスケジュールに応じて端末の中断を減らします。",
@@ -358,8 +378,15 @@
     galleryTitle: "ギャラリー",
     featuresTitle: "機能とオプション",
     privacyTitle: "プライバシーポリシー",
-    hkPageLead: "屋外でもカードが飛ばないクリベッジを。HK Crib Go はオフラインの短時間対局、AI 対戦、6言語UIに対応します。",
-    havenPageLead: "Haven はモードに応じて着信・通知などの中断を減らし、必要な連絡は残します。",
+    hkFeat4: "<strong>AI アシスト付きサポート機能</strong> — バグ報告、改善提案、質問ができます。メッセージ送信にはインターネット接続が必要です。",
+    hkPageKicker: "香港クリベッジ • Android ゲーム",
+    hkPageTagline: "Wi-Fi がなくても、あなたの番です。",
+    hkPageLead:
+      "地下鉄でも、テントの中でも、飛行中でも、香港クリベッジの短時間対局をすぐ始められます。AI の相手はいつでも準備OK。完全オフラインで遊べ、UI は6言語に対応しています。",
+    havenPageKicker: "割り込み管理 • Android アプリ",
+    havenPageTagline: "大切なものは残して。あとは後で。",
+    havenPageLead:
+      "仕事中、運転中、睡眠中でも、どの着信や通知に割り込ませるかを選べます。合うモードをオンにするか、スケジュールに合わせて Haven に任せられます。",
   });
 
   function t(key) {
