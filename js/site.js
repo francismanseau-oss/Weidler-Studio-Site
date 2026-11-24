@@ -114,14 +114,41 @@
     });
   }
 
+  function focusPrivacyFromHash(shouldScroll) {
+    if (location.hash !== "#confidentialite") return;
+    const section = document.getElementById("confidentialite");
+    const host = document.getElementById("privacyAccordion");
+    if (!host) return;
+    const first = host.querySelector("details.acc-item");
+    if (first) {
+      host.querySelectorAll("details.acc-item").forEach((d) => {
+        d.open = d === first;
+      });
+    }
+    if (shouldScroll && section) {
+      requestAnimationFrame(() => {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }
+
   function refresh() {
     applyChrome();
     buildLangSwitcher();
     renderHkGuideAccordion();
     renderPrivacyAccordion();
     markCurrentNav();
+    focusPrivacyFromHash(true);
   }
 
-  window.addEventListener("ws:locale", refresh);
+  window.addEventListener("ws:locale", () => {
+    applyChrome();
+    buildLangSwitcher();
+    renderHkGuideAccordion();
+    renderPrivacyAccordion();
+    markCurrentNav();
+    focusPrivacyFromHash(false);
+  });
+  window.addEventListener("hashchange", () => focusPrivacyFromHash(true));
   document.addEventListener("DOMContentLoaded", refresh);
 })();

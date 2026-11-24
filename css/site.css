@@ -463,6 +463,10 @@ a.app-card:hover .btn,
   color: var(--text);
 }
 
+#confidentialite {
+  scroll-margin-top: 5.5rem;
+}
+
 .accordion {
   display: grid;
   gap: 0.65rem;
